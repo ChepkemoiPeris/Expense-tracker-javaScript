@@ -1,0 +1,66 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+<div class="container">
+    <h1 class="row">
+
+        Expense Tracker
+
+    </h1>
+    <br/><br/>
+    <p>Add a New Item</p>
+    <div class="row">
+        <form class=" col-sm-offset-3">
+            <div class="form-group">
+                <label>Name:</label>
+                <input type="text" class="form-control"
+                       placeholder="Where Was Your Expense Made"
+                       id="name" style="width: 30vw" />
+
+            </div><br>
+            <div class="form-group">
+                <label>Date:</label>
+                <input type="date"
+                       class=" form-control"
+                         />
+                <label>Amount:</label>
+                <input type="number" class="form-control" min="1" id="amount" >
+            </div><br>
+            <button id="expense" type="submit" class="btn btn-primary btn-block" onclick="addRow()">Add Expense</button>
+        </form>
+    </div>
+    <div class="row">
+        <table id="myTableData"   >
+            <tr>
+                <td><b>Name</b></td>
+                <th id="date">date</th>
+                <th style="text-align: right" id="amount">amount</th>
+            </tr>
+            <tr id="if-empty">
+                <td colspan="4"><span>Your added items will show up here!</span></td>
+            </tr>
+        </table>
+
+
+
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script type="text/javascript" src="expense.js"></script>
+</body>
+
+</html>
